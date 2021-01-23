@@ -10,9 +10,3 @@ install : target/release/gDiceRoller
 uninstall :
 	rm -f /usr/bin/gRollLang
 	rm -f /usr/share/applications/gRollLang.desktop
-
-clean-all : clean
-	cargo clean
-
-clean :
-	rue
