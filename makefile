@@ -1,12 +1,15 @@
-.PHONY: clean clean-all install uninstall
+.PHONY: install uninstall clean-all
 
 target/release/gDiceRoller : src
 	cargo build --release
 
-install : target/release/gDiceRoller
-	cp target/release/gRollLang /usr/bin/gRollLang
+install :
+	cp target/release/g_roll_lang /usr/bin/gRollLang
 	cp data/gRollLang.desktop /usr/share/applications/gRollLang.desktop
 
 uninstall :
 	rm -f /usr/bin/gRollLang
 	rm -f /usr/share/applications/gRollLang.desktop
+
+clean-all :
+	cargo clean
