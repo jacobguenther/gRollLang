@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=gRollLang
+GenericName=gRollLang
+Comment=GTK application for assisting in RPG dice rolls.
+Categories=Game;GTK
+Exec=gRollLang
+Terminal=false
+Type=Application
