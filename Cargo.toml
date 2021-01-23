@@ -1,0 +1,12 @@
+[package]
+name = "g_roll_lang"
+version = "0.1.0"
+authors = ["Jacob <jacobrwguenther@protonmail.com>"]
+edition = "2018"
+description = "A gtk application for assisting with RPG dice rolls."
+license = "GNU AGPLv3"
+keywords = ["dice", "rpg", "gtk"]
+
+[dependencies]
+gtk = { version = "0.9.2", features = ["v3_22"] }
+roll_lang = { git = "https://github.com/jacobguenther/roll_lang", features = ["default"] }
