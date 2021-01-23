@@ -1,3 +1,7 @@
+// File: src/main.rs
+// Author: Jacob Guenther
+// Date: January 2020
+
 extern crate gtk;
 extern crate roll_lang;
 

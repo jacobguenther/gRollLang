@@ -1,3 +1,7 @@
+// File: src/roll.rs
+// Author: Jacob Guenther
+// Date: January 2020
+
 use std::sync::Arc;
 
 use crate::gtk::prelude::*;

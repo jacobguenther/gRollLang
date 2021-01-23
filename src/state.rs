@@ -1,3 +1,7 @@
+// File: src/state.rs
+// Author: Jacob Guenther
+// Date: January 2020
+
 use gtk::{EditableExt, EntryExt};
 use std::collections::VecDeque;
 

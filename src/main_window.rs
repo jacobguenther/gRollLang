@@ -1,3 +1,7 @@
+// File: src/main_window.rs
+// Author: Jacob Guenther
+// Date: January 2020
+
 use crate::gtk::prelude::*;
 use gtk::*;
 
