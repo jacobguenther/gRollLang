@@ -1,0 +1,15 @@
+<id>quaternion.site.gRollLang</id>
+<name>gRollLang</name>
+<project_license>AGPL-3.0</project_license>
+<metadata_license>CC0-1.0</metadata_license>
+<developer_name>Jacob Guenther</developer_name>
+<summary>A GTK app for assisting in rolling dice common to tabletop RPGs.</summary>
+<url type="homepage">https://quaternion.site</url>
+<update_contact>jacobrwguenther@protonmail.com</update_contact>
+<releases>
+    <release version="0.1.0" date="2021-01-23"/>
+</releases>
+<launchable type="desktop-id">quaternion.site.gRollLang.desktop</launchable>
+<provides>
+    <binary>quaternion.site.gRollLang</binary>
+</provides>

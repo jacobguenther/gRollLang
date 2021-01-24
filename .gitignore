@@ -3,5 +3,3 @@
 /flatpak*
 
 /data/*.glade~
-
-Cargo.lock
