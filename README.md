@@ -16,4 +16,4 @@ Install to system
 
 Clean-up
 
-`make clean`
+`make clean-all`
