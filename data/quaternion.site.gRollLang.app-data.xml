@@ -7,7 +7,7 @@
 <url type="homepage">https://quaternion.site</url>
 <update_contact>jacobrwguenther@protonmail.com</update_contact>
 <releases>
-    <release version="0.1.0" date="2021-01-23"/>
+    <release version="1.0.0" date="2021-01-23"/>
 </releases>
 <launchable type="desktop-id">quaternion.site.gRollLang.desktop</launchable>
 <provides>

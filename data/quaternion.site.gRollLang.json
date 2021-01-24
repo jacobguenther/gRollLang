@@ -1,5 +1,5 @@
 {
-    "app-id": "jacob.guenther.gRollLang",
+    "app-id": "quaternion.site.gRollLang",
     "tags": [],
 
     "runtime": "org.gnome.Platform",
@@ -38,9 +38,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jacobguenther/gRollLang.git",
-                    "branch": "main",
-                    "tag": "v0.1.0",
-                    "commit": "8cd85c78a7bd3703d5cea3c7bffc21c18ee13481"
+                    "tag": "v1.0.0",
+                    "commit": "eafcf1fff6b5d4cd03b4d5ea267b273b7d736814"
                 }
             ]
         }
