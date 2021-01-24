@@ -9,11 +9,11 @@
     ],
 
     "command": "gRollLang",
-    "desktop-file-name-suffix": " ☢️",
     "finish-args": [
         "--socket=x11",
         "--socket=wayland",
-        "--device=dri"
+        "--device=dri",
+        "--share=ipc"
     ],
 
     "build-options": {
@@ -21,7 +21,7 @@
         "build-args": [],
         "env": {
             "CARGO_HOME": "/run/build/gRollLang/cargo",
-            "RUSTFLAGS": "--error-format=short --remap-path-prefix =../",
+            "RUSTFLAGS": "--remap-path-prefix =../",
             "RUST_BACKTRACE": "1"
         }
     },
@@ -31,8 +31,6 @@
             "name": "gRollLang",
             "buildsystem": "simple",
             "build-commands": [
-                "cargo -V",
-                "rustc -V",
                 "make install PREFIX=/app"
             ],
             "sources": [

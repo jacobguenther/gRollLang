@@ -10,7 +10,7 @@ sharedir=$(DESTDIR)$(PREFIX)/share
 .PHONY: install uninstall clean clean-all
 
 target/release/gRollLang : src
-	cargo build --release
+	cargo build --release --offline --verbose
 
 install :
 	mkdir -p $(bindir)
@@ -23,13 +23,24 @@ uninstall :
 	rm -f /usr/bin/gRollLang
 	rm -f /usr/share/applications/quaternion.site.gRollLang.desktop
 
-flatpak-dev : target/release/gRollLang
-	mkdir -p flatpak-dev
-	flatpak-builder flatpak-dev data/quaternion.site.gRollLang-dev.json
 
-flatpak : target/release/gRollLang
+flatpak-development : target/release/gRollLang
+	mkdir -p flatpak-development
+	flatpak-builder flatpak-development data/quaternion.site.gRollLang-dev.json
+
+flatpak-development-install : target/release/gRollLang
+	mkdir -p flatpak-development
+	flatpak-builder --user --install flatpak-development data/quaternion.site.gRollLang-dev.json
+
+
+flatpak-release : target/release/gRollLang
 	mkdir -p flatpak
 	flatpak-builder flatpak data/quaternion.site.gRollLang.json
+
+flatpak-release-install : target/release/gRollLang
+	mkdir -p flatpak
+	flatpak-builder --user --install flatpak data/quaternion.site.gRollLang-dev.json
+
 
 clean-all : clean
 	cargo clean
