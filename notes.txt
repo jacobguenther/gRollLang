@@ -1,0 +1,9 @@
+
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+
+flatpak install --user gnome-nightly org.gnome.Sdk org.gnome.Platform
+
+flatpak install --user flathub org.freedesktop.Sdk.Extension.rust-stable//20.08
+
+flatpak-builder --run flatpak-development/ data/gRollLang-dev.json gRollLang
